@@ -28,14 +28,7 @@ function isFormValid(){
 }
 
 function validateForm() {
-    //USERNAME
-    if(usernameInput.value.trim()==''){
-        setError(usernameInput, 'Name can not be empty');
-    }else if(usernameInput.value.trim().length <5 || usernameInput.value.trim().length > 15){
-        setError(usernameInput, 'Name must be min 5 and max 15 charecters');
-    }else {
-        setSuccess(usernameInput);
-    }
+    
     //EMAIL
     if(emailInput.value.trim()==''){
         setError(emailInput, 'Provide email address');
